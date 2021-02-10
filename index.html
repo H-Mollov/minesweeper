@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+    <script src="./main.js" type="module"></script>
+    <title>Minesweeper</title>
+</head>
+
+<body>
+    <div class="intro">
+        <h1>Minesweeper</h1>
+        <article>
+            <p>Welcome to the classic Minesweeper Game! :)</p>
+            <p>You will find 3 available modes, each with increased difficulty.</p>
+            <ul>
+                <li><i class="fas fa-bomb"></i>  Easy: 9x9 - 10 mines.</li>
+                <li><i class="fas fa-bomb"></i>  Medium: 16x16 - 40 mines.</li>
+                <li><i class="fas fa-bomb"></i>  Hard: 30x16 - 100 mines.</li>
+            </ul>
+            <p>To win the game, you have to sweep all fields that dont have mines.</p>
+            <p>Each field has a number, indicating how many mines are surounding it.</p>
+            <p>Stepping on a mine is bad for your health. So, dont do that...</p>
+            <p>Choose your difficulty and have fun! :)</p>
+        </article>
+        <p>You died ... <i class="far fa-dizzy"></i></p>
+        <p>Victory! All mines successfully sweeped! <i class="far fa-laugh-wink"></i></p>
+    </div>
+    <div class="counters" style="display: none;">
+        <span id="mines"></span>
+        <span id="timer">0</span>
+    </div>
+    <div class="settings">
+        <ul>
+            <li id="easy-setting">Easy</li>
+            <li id="medium-setting">Medium</li>
+            <li id="hard-setting">Hard</li>
+        </ul>
+    </div>
+    <div class="field">
+    </div>
+    <div class="game-buttons">
+        <button id="new-game-btn" class="pulse">New Game</button>
+        <Button id="difficulty-btn" class="pulse">Change Difficulty</Button>
+    </div>
+</body>
+
+</html>
