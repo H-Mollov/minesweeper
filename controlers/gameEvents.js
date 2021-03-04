@@ -18,7 +18,7 @@ function startNewGame(event, settingsObj) {
     const fieldHTML = document.getElementsByClassName('field')[0];
     Object.assign(settingsObj, generatedField);
     fieldHTML.innerHTML = '';
-    fieldHTML.style.maxWidth = `${generatedField.columns * 39}px`;
+    fieldHTML.style.width = `${generatedField.columns * 39}px`;
     stopTimer(settingsObj.timer, '#timer');
     displayIntroMessage("none");
     displayDeathMessage("none");
