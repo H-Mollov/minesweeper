@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./favicon.png" type="image/png">
     <script src="./main.js" type="module"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WYGXG2MB3X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WYGXG2MB3X');
+    </script>
     <title>Minesweeper</title>
 </head>
 
@@ -18,9 +26,9 @@
             <p>Welcome to the classic Minesweeper Game! :)</p>
             <p>You will find 3 available modes, each with increased difficulty.</p>
             <ul>
-                <li><i class="fas fa-bomb"></i>  Easy: 9x9 - 10 mines.</li>
-                <li><i class="fas fa-bomb"></i>  Medium: 16x16 - 40 mines.</li>
-                <li><i class="fas fa-bomb"></i>  Hard: 30x16 - 100 mines.</li>
+                <li><i class="fas fa-bomb"></i> Easy: 9x9 - 10 mines.</li>
+                <li><i class="fas fa-bomb"></i> Medium: 16x16 - 40 mines.</li>
+                <li><i class="fas fa-bomb"></i> Hard: 30x16 - 100 mines.</li>
             </ul>
             <p>To win the game, you have to sweep all fields that dont have mines.</p>
             <p>Each field has a number, indicating how many mines are surounding it.</p>
